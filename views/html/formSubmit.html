@@ -1,0 +1,136 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+    <title>2021 SK Careers Fair On Air</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!--[if this page needs to reset cache]>
+            <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+            <![endif]-->
+    <meta name="author" content="univEBIZ_zo.oe">
+    <meta name="keywords"
+        content="2021 SK Careers Fair On Air, 2021 SK Careers Fair, SK Career Fair, SK채용박람회, SK채용, 2021 SK그룹 하반기 신입채용, SK주식회사 C&C, SK이노베이션, SK E&S, SK실트론,SK바이오팜, 공채, 신입채용, 신입모집, 그룹채용, 하반기 공채, 정기">
+    <meta name="description" content="2021 SK신입 채용에 진심인 워너비들을 모십니다.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2021 SK Careers Fair On Air">
+    <meta property="og:description" content="2021 SK신입 채용에 진심인 워너비들을 모십니다.">
+    <meta property="og:image" content="../../content/images/share.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="">
+
+    <meta name="twitter:title" content="2021 SK Careers Fair On Air">
+    <meta name="twitter:description" content="2021 SK신입 채용에 진심인 워너비들을 모십니다.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="../../content/images/share.png">
+    <meta name="twitter:url" content="">
+
+    <meta name="google-site-verification" content="NSF2_yhdSgEIM6SJahfFWJYtcBpJ-4w910lO1bPnwOs" />
+    <meta name="naver-site-verification" content="f34b80fbde9d6dbc20bf63b20bcc634f3410b2ee" />
+
+    <!-- <link rel="icon" href="" sizes="">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-ico" href=""> -->
+
+    <link rel="shortcut icon" type="image/png" href="../../content/images/favicon.png">
+    <!-- Chrome, Safari, IE (.ico) -->
+    <link rel="icon" type="image/png" href="../../content/images/favicon.png"> <!-- Firefox, Opera (.png) -->
+
+    <link href="../../content/styles/style.css" rel="stylesheet">
+
+    <script src="../../content/scripts/jquery-1.12.4.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161186827-2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161186827-2');
+    </script>
+</head>
+
+<body>
+    <!-- //section START -->
+    <section>
+        <div class="sub_vsl_area">
+            <div class="grid">
+                <img src="../../content/images/subvisual-tit.png" alt="[SK 하반기 인턴/신입 모집] #SK채용 오늘도 열림!">
+            </div> <!-- //grid -->
+        </div> <!-- //sub visual area -->
+        <div class="cont_area">
+            <div class="grid">
+                <img src="../../content/images/form-submit-txt.png" alt="SK Careers Fair 사전질문 접수 완료">
+                <div class="form_submit_btn_box">
+                    <a href="index.html" title="메인 페이지로 이동" class="btn"><img
+                            src="../../content/images/form-submit-btn.png" alt="메인으로"></a>
+                </div>
+            </div> <!-- //grid -->
+        </div> <!-- //content area : form -->
+    </section>
+    <!-- //section END -->
+    <!-- footer START -->
+    <footer>
+        <div class="grid">
+            <p>COPYRIGHT (C) SK CAREER FAIR. ALL RIGHT RESERVED.</p>
+        </div> <!-- //grid -->
+    </footer>
+    <!-- //footer END -->
+    <script>
+        $(document).ready(function () {
+
+            var radioFl = $('input[type="radio"]');
+            var checkFl = $('input[type="checkbox"]');
+            var checkAffFl = $('input[name="affiliate"]');
+
+            //거주지역 라디오박스 클릭시 텍스트 필드 보임
+            radioFl.change(function () {
+                var inputFl = $(this).siblings('input[type="text"]');
+
+                if ($(this).prop("checked")) {
+                    inputFl.show();
+                }
+            });
+
+            //관계사 체크박스 클릭시 텍스트 필드 보임
+            checkFl.change(function () {
+                var textFl = $(this).siblings('.form_field').find('textarea');
+
+                if ($(this).prop("checked")) {
+                    textFl.show();
+                } else {
+                    textFl.hide();
+                }
+            });
+
+            //관계사 체크박스 해제 시 이벤트
+            checkAffFl.on('click', function () {
+                var checkAffTxt = $(this).siblings('.form_field').find('textarea');
+
+                function alertAff() {
+                    if (confirm('관계사 체크 해제 시 입력된 내용은 모두 초기화 됩니다.') == true) {
+                        checkAffTxt.val('');
+                    } else {
+                        return;
+                    }
+                }
+                if (!$(this).is(":checked") && !checkAffTxt.val().length == 0) {
+                    alertAff();
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

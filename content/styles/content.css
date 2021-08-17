@@ -1,0 +1,831 @@
+@charset "utf-8";
+
+/*============================================================
+main
+============================================================*/
+main {
+    font-size: 0;
+}
+
+/* main .cont_area {
+    padding-bottom: 5rem;
+} */
+
+/* key visual area
+============================================================*/
+.kv_area {
+    /* padding-bottom: 9.5rem; */
+    background: url('../images/keyvisual-bg-ver3.png') no-repeat top center;
+    background-size: cover;
+}
+
+.mov_wrap {
+    position: relative;
+    /* position: absolute; */
+    /* margin-left: 9%;
+    margin-right: 9%; */
+}
+
+.mov_box {
+    position: absolute;
+    top: 14.54%;
+    left: 50%;
+    width: 79.95%;
+    height: 51.50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.mov_frame {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 100%;
+    /* height: 0; */
+    border-radius: 1rem;
+}
+
+.mov_frame>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mov_player {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1052e;
+}
+
+.mov_tab_box {
+    padding-top: 4.65rem;
+    /* padding-top: 1.5rem; */
+}
+
+.mov_tab {
+    width: 47.4%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.mov_tab img {
+    opacity: 0;
+}
+
+.mov_tab.on img {
+    opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+    .mov_wrap {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mov_tab {
+        /* margin: 0 1%; */
+        width: 50%;
+    }
+}
+
+.char-image {
+    position: absolute;
+}
+
+.char-image.type1 {
+    top: 23.59%;
+    right: -39.04%;
+    width: 29.57%;
+}
+
+.char-image.type2 {
+    right: -13.23%;
+    top: 33.83%;
+    width: 25.74%;
+}
+
+.char-image.type3 {
+    top: 37.06%;
+    left: -19.68%;
+    width: 30.21%;
+}
+
+.char-image.type4 {
+    top: 20.15%;
+    left: -42.65%;
+    width: 25.85%;
+}
+
+/* 퀴즈 이벤트 영역
+============================================================*/
+.quiz_banner {
+    position: relative;
+}
+
+.quiz_banner img {
+    position: relative;
+    max-width: initial;
+    width: 106.4%;
+    -webkit-transform: translateX(-6.4%);
+    transform: translateX(-6.4%);
+}
+
+.quiz_banner .btn {
+    position: absolute;
+    bottom: 21.44%;
+    right: 13%;
+    width: 14.9%;
+    height: 22%;
+}
+
+.modal_quiz_wrap {
+    overflow: hidden;
+    width: 37.5rem;
+    border-radius: 0.5rem;
+}
+
+.modal_quiz_wrap .modal_hd_tit {
+    width: 44%;
+}
+
+.modal_quiz_wrap .modal_cont {
+    padding: 2rem 3.5rem 4rem;
+}
+
+.modal_quiz_wrap .form_tit {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.modal_quiz_wrap .form_row .col {
+    width: 47.5%;
+}
+
+.modal_quiz_wrap .form_field input[type="text"] {
+    width: 100%;
+}
+
+.quiz_qst {
+    display: block;
+    font-size: 1.7rem;
+    line-height: 1.3;
+}
+
+.quiz_qst span {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.quiz_anw .form_field input[type="text"] {
+    width: 25rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border: 5px solid #c5c5c5;
+}
+
+.modal_quiz_wrap .btn_box .btn {
+    width: 23%;
+}
+
+@media (max-width: 575.98px) {
+    .modal_quiz_wrap {
+        overflow: initial;
+        width: calc(100% - 40px);
+    }
+
+    .modal_quiz_wrap .close_modal {
+        top: -3rem;
+        right: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    .modal_quiz_wrap .modal_hd_tit {
+        width: 70%;
+    }
+
+    .modal_quiz_wrap .modal_cont {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .modal_quiz_wrap .form_tit {
+        background-image: none !important;
+    }
+
+    .modal_quiz_wrap .form_row .col {
+        width: 100%;
+    }
+
+    .modal_quiz_wrap .form_row .col+.col {
+        margin-top: 1rem;
+    }
+
+    .quiz_anw .form_field input[type="text"] {
+        width: 100%;
+        border-width: 2px;
+    }
+
+    .modal_quiz_wrap .btn_box .btn {
+        width: 35%;
+    }
+}
+
+/* 주요 일정 안내 영역
+============================================================*/
+.sched_tgl_btn {
+    background: url('../images/content-schedule-btn-open.png') no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.sched_tgl_btn img {
+    opacity: 0;
+}
+
+.sched_tgl_btn.on img {
+    opacity: 1;
+}
+
+.sched_tbl_box {
+    display: none;
+}
+
+.sched_tbl_box .tit {
+    display: block;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.sched_tbl {
+    margin: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-top: 2px solid #000;
+}
+
+.sched_tbl .row {
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.sched_tbl .label {
+    padding: 1rem 0.75rem;
+    width: 20%;
+}
+
+.sched_tbl .tbl {
+    width: 80%;
+}
+
+.sched_tbl table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sched_tbl tr {
+    border-top: 1px solid #b2b2b2;
+}
+
+.sched_tbl tr:first-child {
+    border-top: 0;
+}
+
+.sched_tbl td {
+    padding: 1rem 0.75rem;
+    vertical-align: middle;
+    border-left: 1px solid #b2b2b2;
+}
+
+.sched_tbl td:first-child {
+    width: 30%;
+}
+
+.sched_tbl td:last-child {
+    width: 70%;
+    text-align: left;
+}
+
+.sched_tbl a:hover {
+    color: #ef800a;
+}
+
+@media (max-width: 576.98px) {
+    .sched_tbl .row {
+        flex-direction: column;
+    }
+
+    .sched_tbl .label,
+    .sched_tbl .tbl {
+        width: 100%;
+    }
+
+    .sched_tbl .label {
+        text-align: center;
+        background-color: #eee;
+    }
+
+    .sched_tbl .tbl {
+        border-top: 1px solid #b2b2b2;
+    }
+
+    .sched_tbl td:first-child {
+        border-left: 0;
+    }
+}
+
+/* 카카오톡 채널 추가 영역
+============================================================*/
+.kakao_channer {
+    position: relative;
+}
+
+.kakao-btn {
+    display: block;
+    position: absolute;
+    top: 53.12%;
+    left: 23%;
+    width: 54.2%;
+    height: 7.2%;
+}
+
+.sub-kakao-channer .kakao-btn {
+    top: 80.5%;
+    left: 23.3%;
+    width: 53.2%;
+    height: 10.4%;
+}
+
+/* 궁금증 EVENT 하러가기 버튼 영역
+============================================================*/
+.faq_btn_box {
+    position: relative;
+}
+
+.faq_btn_box .btn {
+    position: absolute;
+    bottom: 12.5%;
+    left: 22.9%;
+    width: 53.9%;
+    height: 9.91%;
+}
+
+.event-banner-box {
+    max-width: 1081px;
+    margin: 0 auto;
+    transform: translate(2.6rem);
+}
+
+.gary {
+    background-color: #4b4b4b;
+}
+
+/* 관계사별 사전 질문 FAQ
+============================================================*/
+.faq_corp_box {
+    position: relative;
+}
+
+.faq_corp_list {
+    position: absolute;
+    left: 50%;
+    bottom: 12.76%;
+    width: 65.10%;
+    transform: translateX(-50%);
+}
+
+.faq_corp_list li {
+    margin-right: 9.4%;
+    width: 26.14%;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+.modal_faq_wrap {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 47rem;
+}
+
+.modal_faq_wrap .close_modal {
+    top: 1.5rem;
+    right: 1.5rem;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.modal_faq_wrap .close_modal:before,
+.modal_faq_wrap .close_modal:after {
+    background-color: #000;
+}
+
+.modal_faq_box {
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+    background-color: #fff;
+    border: 4px solid #ef800a;
+    border-radius: 0.75rem;
+}
+
+.modal_faq_box .modal_hd {
+    border-bottom: 2px solid #000;
+}
+
+.modal_faq_box .modal_hd img {
+    width: 16.25rem;
+}
+
+.modal_faq_list li {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.modal_faq_list .q {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #b2b2b2;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+.modal_faq_list .q_tit {
+    position: relative;
+    display: block;
+    padding-left: 2rem;
+}
+
+.modal_faq_list .q_tit .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+.modal_faq_list .a {
+    display: none;
+    padding: 1rem 1.5rem 1.5rem 2rem;
+    background-color: #fef9f3;
+    border-bottom: 1px solid #000;
+}
+
+.modal_faq_list .a_label {
+    display: inline-block;
+    padding: 0 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #fff;
+    background-color: #ef800a;
+}
+
+.box-image {
+    position: absolute;
+    right: -2.12%;
+    bottom: 10.87%;
+    width: 23.51%;
+}
+
+.char-image.type5 {
+    left: -7.02%;
+    bottom: 6.06%;
+    width: 20.31%;
+}
+
+@media (max-width: 576.98px) {
+    .modal_faq_wrap {
+        width: calc(100% - 40px);
+    }
+
+    .modal_faq_box {
+        border-width: 2px;
+    }
+}
+
+/* 가이드북 링크 박스
+============================================================*/
+.link_box {
+    position: relative;
+}
+
+.link_btn {
+    position: absolute;
+}
+
+.link_guide_box .link_btn {
+    top: 16.86%;
+    width: 19.25%;
+    height: 34.40%;
+}
+
+.link_guide_box .link_btn_1 {
+    left: 18.61%;
+}
+
+.link_guide_box .link_btn_2 {
+    left: 40.95%;
+}
+
+.link_guide_box .link_btn_3 {
+    left: 63.82%;
+}
+
+.link_guide_box .link_btn_4 {
+    left: 29.89%;
+}
+
+.link_guide_box .link_btn_5 {
+    left: 51.80%;
+}
+
+.link_guide_box .link_btn_4,
+.link_guide_box .link_btn_5 {
+    top: 57.29%;
+}
+
+.link_home_box .link_btn {
+    width: 17.02%;
+    height: 27.72%;
+}
+
+.link_home_box .link_btn_1,
+.link_home_box .link_btn_2,
+.link_home_box .link_btn_3 {
+    top: 29.67%;
+}
+
+.link_home_box .link_btn_1 {
+    left: 18.3%;
+}
+
+.link_home_box .link_btn_2 {
+    left: 41.5%;
+}
+
+.link_home_box .link_btn_3 {
+    left: 65%;
+}
+
+.link_home_box .link_btn_4,
+.link_home_box .link_btn_5 {
+    top: 60.87%;
+}
+
+.link_home_box .link_btn_4 {
+    left: 30%;
+}
+
+.link_home_box .link_btn_5 {
+    left: 54.2%;
+}
+
+/*============================================================
+section
+============================================================*/
+.sub_vsl_area {
+    background: url('../images/subvisual-bg.png') no-repeat center top;
+    background-size: cover;
+}
+
+/* 사전 질문
+============================================================*/
+.form_hd_box {
+    text-align: center;
+    background: url('../images/form-head-tit-bg.png') no-repeat center top;
+    background-size: 100%;
+}
+
+.form_hd_box img {
+    width: 67.76%;
+}
+
+.form_box {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #bbc2c7;
+}
+
+.form_box.brn {
+    border-bottom: 0;
+}
+
+.form_tit {
+    display: block;
+    padding-bottom: 1.5rem;
+    font-family: 'GmarketSansBold', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
+    line-height: 1.4;
+}
+
+small.form_tit {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+strong.form_tit {
+    font-size: 1.3rem;
+    color: #e0002a;
+}
+
+.form_field_label {
+    display: block;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.form_field input[type="text"] {
+    display: inline-block;
+    padding: 0 1.5rem;
+    width: 30rem;
+    height: 3rem;
+    font-family: 'GmarketSansMedium', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    background-color: #fff;
+    border: 1px solid #bfcfd9;
+}
+
+.form_field textarea {
+    padding: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    font-family: 'GmarketSansMedium', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #bfcfd9;
+}
+
+.form_check {
+    padding-top: 1.25rem;
+}
+
+.form_check input[type="checkbox"],
+.form_check input[type="radio"] {
+    width: 0;
+    height: 0;
+}
+
+.form_check label {
+    display: inline-block;
+    font-family: 'GmarketSansBold', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
+    font-size: 1.2rem;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+.form_check .box {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+.form_check input[type="checkbox"]:checked+.box,
+.form_check input[type="radio"]:checked+.box {
+    background: #333 url('../images/form-check-ico.png') no-repeat center;
+    background-size: 100%;
+}
+
+.form_check input[type="text"] {
+    display: none;
+    margin-left: 0.5rem;
+    padding: 0 1.5rem;
+    width: 8rem;
+    height: 3rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 3rem;
+    border: 1px solid #bfcfd9;
+    vertical-align: middle;
+}
+
+.form_check textarea {
+    display: none;
+    margin-top: 1rem;
+}
+
+.form_check_list label {
+    padding: 0.5rem 0;
+}
+
+.form_check_list label+label {
+    margin-left: 1.5rem;
+}
+
+.form_check_list.flex_box label+label {
+    margin-left: 0;
+}
+
+.form_term {
+    overflow-y: scroll;
+    padding: 1.5rem;
+    height: 10rem;
+    font-family: 'GmarketSansLight', 'Nanum Gothic', 'Malgun Gothic', '돋움', 'dotum', 'AppleGothic', Helvetica, Arial, Sans-Serif !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #bfcfd9;
+}
+
+.form_tip {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.form_tip.txt_indent {
+    padding-left: 1rem;
+}
+
+.form_btn_box {
+    padding: 5.4rem 0 7.75rem;
+    /* padding: 6rem 0; */
+}
+
+.form_btn_box .btn {
+    margin: 0 5px;
+    width: 32.9%;
+}
+
+.form_submit_btn_box {
+    padding: 2rem 0 5rem;
+    text-align: center;
+}
+
+.form_submit_btn_box .btn {
+    width: 22.87%;
+}
+
+@media (max-width: 575.98px) {
+    .form_hd_box {
+        background: none;
+    }
+
+    .form_hd_box img {
+        width: 100%;
+    }
+
+    small.form_tit {
+        font-size: 1.2rem;
+    }
+
+    strong.form_tit {
+        font-size: 1.4rem;
+    }
+
+    .form_field_label,
+    .form_tip {
+        font-size: 1.1rem;
+    }
+
+    .form_check label,
+    .form_field input[type="text"] {
+        font-size: 1.3rem;
+    }
+
+    .form_field input[type="text"] {
+        width: 100%;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .form_check_list {
+        font-size: 0;
+    }
+
+    .form_check_list label {
+        display: block;
+    }
+
+    .form_check_list label+label {
+        margin-left: 0;
+    }
+
+    .form_btn_box .btn {
+        margin: 0 1%;
+        width: 48%;
+    }
+
+    .form_submit_btn_box .btn {
+        width: 35%;
+    }
+}
