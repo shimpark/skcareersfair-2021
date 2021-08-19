@@ -17,6 +17,8 @@ main {
     /* padding-bottom: 9.5rem; */
     background: url('../images/keyvisual-bg-ver3.png') no-repeat top center;
     background-size: cover;
+    /* 21 08 19 네이블 수정 추가 */
+    overflow: hidden;
 }
 
 .mov_wrap {
@@ -324,6 +326,61 @@ main {
 .sched_tbl a:hover {
     color: #ef800a;
 }
+
+/* 21 08 19 네이블 수정 추가 */
+.sched_tbl_box a.line,
+.text-box .label.line {
+    position: relative;
+    display: block;
+}
+
+.sched_tbl_box a.txt-break {
+    display: block;
+}
+
+.sched_tbl_box a.line:before,
+.text-box .label.line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3.02%;
+    width: 106%;
+    height: 1px;
+    background-color: #b2b2b2;
+}
+
+.text-box {
+    padding: 1rem 0.75rem;
+    width: 20%;
+}
+
+.text-box .label.line:before {
+    left: -8.98%;
+    width: 119%;
+}
+
+.text-box .label {
+    width: 100%;
+    padding: 0;
+}
+
+.mb-box {
+    display: none;
+}
+
+.link-box {
+    position: relative;
+}
+
+.link-box .link-btn {
+    position: absolute;
+    left: 24%;
+    top: 40%;
+    width: 53%;
+    height: 19%;
+}
+
+/* //21 08 19 네이블 수정 추가 */
 
 @media (max-width: 576.98px) {
     .sched_tbl .row {
@@ -775,6 +832,15 @@ strong.form_tit {
     width: 22.87%;
 }
 
+/* 21 08 19 네이블 수정 추가 */
+@media (max-width: 768.98px) {
+    .event-banner-box {
+        transform: none;
+    }
+}
+
+/* //21 08 19 네이블 수정 추가 */
+
 @media (max-width: 575.98px) {
     .form_hd_box {
         background: none;
@@ -828,4 +894,15 @@ strong.form_tit {
     .form_submit_btn_box .btn {
         width: 35%;
     }
+
+    /* 21 08 19 네이블 수정 추가 */
+    .pc-box {
+        display: none;
+    }
+
+    .mb-box {
+        display: block;
+    }
+
+    /* //21 08 19 네이블 수정 추가 */
 }
